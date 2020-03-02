@@ -1,0 +1,9 @@
+{
+    "connection_file": "channel1_fabcar_profile.json",
+    "appAdmin": "app-admin",
+    "appAdminSecret": "app-adminpw",
+    "orgMSPID": "org1msp",
+    "caName": "ibp-jorge-org1ca-ca.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+    "userName": "user1",
+    "gatewayDiscovery": { "enabled": true, "asLocalhost": false }
+}

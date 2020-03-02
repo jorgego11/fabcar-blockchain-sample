@@ -1,0 +1,75 @@
+{
+    "name": "channel1",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "org1msp"
+    },
+    "organizations": {
+        "org1msp": {
+            "mspid": "org1msp",
+            "peers": [
+                "ibp-jorge-peerorg1-peer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443"
+            ],
+            "certificateAuthorities": [
+                "ibp-jorge-org1ca-ca.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443"
+            ]
+        },
+        "org2msp": {
+            "mspid": "org2msp",
+            "peers": []
+        }
+    },
+    "orderers": {
+        "ibp-jorge-orderingservicenode1-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-orderingservicenode1-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICATCCAaegAwIBAgIUP7Pxs5mFmLWsamV0zEzVsGkTCfwwCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzQyMDBaFw0zNTAyMjUxNzQyMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARz+6BlXL8+Nj6dM6SID76TaLmzA3kVDsABSlbQKAJZfp3n5cEhyqxb\nCjWuACPW5oV9LwlJxYDIt9+pZ8Mm9OvJo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQULJkW1la70pOJT+DdIwdFqjS73dkw\nCgYIKoZIzj0EAwIDSAAwRQIhAIsjh8uTHHdb/PxMBaGcvj0pVPQa5ZW4wCLKRnAm\nCYPVAiBciDuUSb+ngbngTp3HIUyLZ9UdjNH0akQxq9pmRE8WDg==\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "ibp-jorge-orderingservicenode2-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-orderingservicenode2-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICATCCAaegAwIBAgIUP7Pxs5mFmLWsamV0zEzVsGkTCfwwCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzQyMDBaFw0zNTAyMjUxNzQyMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARz+6BlXL8+Nj6dM6SID76TaLmzA3kVDsABSlbQKAJZfp3n5cEhyqxb\nCjWuACPW5oV9LwlJxYDIt9+pZ8Mm9OvJo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQULJkW1la70pOJT+DdIwdFqjS73dkw\nCgYIKoZIzj0EAwIDSAAwRQIhAIsjh8uTHHdb/PxMBaGcvj0pVPQa5ZW4wCLKRnAm\nCYPVAiBciDuUSb+ngbngTp3HIUyLZ9UdjNH0akQxq9pmRE8WDg==\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "ibp-jorge-orderingservicenode3-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-orderingservicenode3-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICATCCAaegAwIBAgIUP7Pxs5mFmLWsamV0zEzVsGkTCfwwCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzQyMDBaFw0zNTAyMjUxNzQyMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARz+6BlXL8+Nj6dM6SID76TaLmzA3kVDsABSlbQKAJZfp3n5cEhyqxb\nCjWuACPW5oV9LwlJxYDIt9+pZ8Mm9OvJo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQULJkW1la70pOJT+DdIwdFqjS73dkw\nCgYIKoZIzj0EAwIDSAAwRQIhAIsjh8uTHHdb/PxMBaGcvj0pVPQa5ZW4wCLKRnAm\nCYPVAiBciDuUSb+ngbngTp3HIUyLZ9UdjNH0akQxq9pmRE8WDg==\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "ibp-jorge-orderingservicenode4-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-orderingservicenode4-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICATCCAaegAwIBAgIUP7Pxs5mFmLWsamV0zEzVsGkTCfwwCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzQyMDBaFw0zNTAyMjUxNzQyMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARz+6BlXL8+Nj6dM6SID76TaLmzA3kVDsABSlbQKAJZfp3n5cEhyqxb\nCjWuACPW5oV9LwlJxYDIt9+pZ8Mm9OvJo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQULJkW1la70pOJT+DdIwdFqjS73dkw\nCgYIKoZIzj0EAwIDSAAwRQIhAIsjh8uTHHdb/PxMBaGcvj0pVPQa5ZW4wCLKRnAm\nCYPVAiBciDuUSb+ngbngTp3HIUyLZ9UdjNH0akQxq9pmRE8WDg==\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "ibp-jorge-orderingservicenode5-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-orderingservicenode5-orderer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICATCCAaegAwIBAgIUP7Pxs5mFmLWsamV0zEzVsGkTCfwwCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzQyMDBaFw0zNTAyMjUxNzQyMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARz+6BlXL8+Nj6dM6SID76TaLmzA3kVDsABSlbQKAJZfp3n5cEhyqxb\nCjWuACPW5oV9LwlJxYDIt9+pZ8Mm9OvJo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQULJkW1la70pOJT+DdIwdFqjS73dkw\nCgYIKoZIzj0EAwIDSAAwRQIhAIsjh8uTHHdb/PxMBaGcvj0pVPQa5ZW4wCLKRnAm\nCYPVAiBciDuUSb+ngbngTp3HIUyLZ9UdjNH0akQxq9pmRE8WDg==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "ibp-jorge-peerorg1-peer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "grpcs://ibp-jorge-peerorg1-peer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICADCCAaegAwIBAgIUFxX/JXeSKM0zAWuIM2eRfrJ0eMowCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDAyMjkxNzMxMDBaFw0zNTAyMjUxNzMxMDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAASmvkH6VfbYXxbuLSr6UeDK01IOnEf43YE2dqE4P9cbGC9ArYu8EVEY\nfupeKK7Cw2yuK9pCWJgioIKuH9pJ3/5bo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYD\nVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQU0ElezIodCYbG9oewOx+SFePy/ukw\nCgYIKoZIzj0EAwIDRwAwRAIgWLUOHaeqOzk0j1Rb9dGlNCgamZNx67chhZ25xwX8\ns54CICclYezsMKRLp8pRsyjhbwM25TPizPp9mRjUYk8Uoa10\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "ibp-jorge-peerorg1-peer.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ibp-jorge-org1ca-ca.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443": {
+            "url": "https://ibp-jorge-org1ca-ca.ocp-dal13-bd8e586d66eff81119bfe4722b13dbd4-0001.us-south.containers.appdomain.cloud:443",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIIDhDCCAyqgAwIBAgIQMcDuz2cghgn16az/Hek66zAKBggqhkjOPQQDAjCBzDEL\nMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMQ8wDQYDVQQHEwZE\ndXJoYW0xDDAKBgNVBAoTA0lCTTETMBEGA1UECxMKQmxvY2tjaGFpbjFwMG4GA1UE\nAxNnaWJwLWpvcmdlLW9yZzFjYS1jYS5vY3AtZGFsMTMtYmQ4ZTU4NmQ2NmVmZjgx\nMTE5YmZlNDcyMmIxM2RiZDQtMDAwMS51cy1zb3V0aC5jb250YWluZXJzLmFwcGRv\nbWFpbi5jbG91ZDAeFw0yMDAyMjkxNzM1NDhaFw0zMDAyMjYxNzM1NDhaMIHMMQsw\nCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xpbmExDzANBgNVBAcTBkR1\ncmhhbTEMMAoGA1UEChMDSUJNMRMwEQYDVQQLEwpCbG9ja2NoYWluMXAwbgYDVQQD\nE2dpYnAtam9yZ2Utb3JnMWNhLWNhLm9jcC1kYWwxMy1iZDhlNTg2ZDY2ZWZmODEx\nMTliZmU0NzIyYjEzZGJkNC0wMDAxLnVzLXNvdXRoLmNvbnRhaW5lcnMuYXBwZG9t\nYWluLmNsb3VkMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1QWvndBdoYjC6sq3\nWHTpsTL8CR+kaq/TNjPpnEnLTJpZeSREjdAnj5TfgbBMJdyz8wAUSgnkhzoo7dW8\nvjumTKOB6zCB6DCB5QYDVR0RBIHdMIHagmdpYnAtam9yZ2Utb3JnMWNhLWNhLm9j\ncC1kYWwxMy1iZDhlNTg2ZDY2ZWZmODExMTliZmU0NzIyYjEzZGJkNC0wMDAxLnVz\nLXNvdXRoLmNvbnRhaW5lcnMuYXBwZG9tYWluLmNsb3Vkgm9pYnAtam9yZ2Utb3Jn\nMWNhLW9wZXJhdGlvbnMub2NwLWRhbDEzLWJkOGU1ODZkNjZlZmY4MTExOWJmZTQ3\nMjJiMTNkYmQ0LTAwMDEudXMtc291dGguY29udGFpbmVycy5hcHBkb21haW4uY2xv\ndWQwCgYIKoZIzj0EAwIDSAAwRQIhAPOikLhE/QikEPT2OaehjdcdfJFesx9dP28A\nw8kfyq+wAiBStUN0ChGClPBDYC4leL0bvNgRxSHioOVCSYlureAAvg==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    }
+}
