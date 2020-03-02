@@ -99,7 +99,7 @@ exports.changeCarOwner = async function(key, newOwner) {
         const contract = network.getContract('fabcar');
 
 
-        ////////////////////////////////////////////////////////////
+        // Send Tx to peers in Org2 ONLY
         const ch = network.getChannel();
         const peers = ch.getPeersForOrg('org2msp');
         //console.log(peers);
